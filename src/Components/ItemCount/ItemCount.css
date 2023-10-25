@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+:root {
+    --clr-bg: #fff;
+    --clr-br: #f7f7f7;
+    --clr-grey: #778ba5;
+    --clr-blue: #1e90ff;
+    --clr-grey-hover: #cdcdcd;
+}
+
+
+
+
+
+.item-counter{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: var(--bg-white);
+border-radius: .25rem;
+margin-left: -2rem;
+}
+
+.item-counter-controls{
+    display: flex;
+    flex-direction: row;
+}
+
+.item-counter-button{
+    font-size: 1rem;
+    color: var(--clr-grey);
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: .063rem;
+    padding: 0.5rem 1rem;
+    border: .10rem solid var(--clr-br) ;
+    border-radius: 0.62rem;
+    box-shadow: -.43rem -.43rem 1.06rem var(--clr-bg),
+    .43rem .43rem 1.06rem  rgba(70,70,70,0.15);
+    background: var(--clr-bg);
+
+
+}
+
+.item-counter-button:hover{
+    color: var(--clr-blue);
+    background: var(--clr-bg);
+    box-shadow: inset 27px 27px 54px var(--clr-grey-hover),
+                inset -27px -27px 54px var(--clr-bg);
+
+}
+
+.item-counter-number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--clr-blue);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    padding: .5rem;
+    
+    border-radius: .25rem;
+    
+}
+
+.item-counter-button-text{
+    font-size: large;
+    color: var(--clr-grey);
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: .063rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.62rem;
+    border: .10rem solid var(--clr-br) ;
+    border-radius: 0.62rem;
+    box-shadow: -.43rem -.43rem 1.06rem var(--clr-bg),
+    .43rem .43rem 1.06rem  rgba(70,70,70,0.15);
+    background: var(--clr-bg);
+}
+
+.item-counter-button-text:hover{ 
+    color: var(--clr-blue);
+    background: var(--clr-bg);
+    box-shadow: inset 27px 27px 54px var(--clr-grey-hover),
+                inset -27px -27px 54px var(--clr-bg);
+
+}
+
+.Toastify__toast-container {
+    margin-top: 7.7rem;
+    margin-right: -.2rem;
+    text-align: left;
+    padding: .25rem;
+    
+  }
+
+  @media screen and (max-width: 780px){
+        
+        .item-counter-controls{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 5.5rem;  
+            margin-left: 4.5rem;            
+        }
+        
+
+
+  }

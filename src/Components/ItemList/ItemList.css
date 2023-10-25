@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+:root {
+    --clr-bg: #fff;
+    --clr-br: #f7f7f7;
+    --clr-grey: #778ba5;
+    --clr-blue: #1e90ff;
+    --clr-grey-hover: #cdcdcd;
+}
+
+.item-list-group{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+  
+}

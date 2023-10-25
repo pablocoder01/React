@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+:root {
+    --clr-bg: #fff;
+    --clr-br: #f7f7f7;
+    --clr-grey: #778ba5;
+    --clr-blue: #1e90ff;
+    --clr-grey-hover: #cdcdcd;
+}
+
+.item-list-container{
+    padding-bottom: 5rem;
+
+}
+
+.titulo-greeting{
+    margin: .5rem 1.5rem;
+    color: var(--clr-blue);
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 780px){
+    .titulo-greeting{
+        display: none;
+    }
+
+}

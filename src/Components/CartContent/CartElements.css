@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+:root {
+    --clr-bg: #fff;
+    --clr-br: #f7f7f7;
+    --clr-grey: #778ba5;
+    --clr-blue: #1e90ff;
+    --clr-grey-hover: #cdcdcd;
+}
+
+.cart-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: var(--clr-br);
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: .62rem;
+    border: .063rem solid var(--clr-br) ;
+}
+
+.cart-card-header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+}
+
+
+
+.cart-card-info{
+    display: flex;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items:flex-start;
+    gap: 2rem;
+    color: var(--clr-grey);
+    
+}
+
+.cart-card-info-title{
+    color: var(--clr-grey);
+    font-weight: bold;
+
+}
+
+.cart-card-footer{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 1rem;
+}
+
+.terminar-compra{
+    font-size: 1rem;
+    color: var(--clr-grey);
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: .063rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.62rem;
+    border: .10rem solid var(--clr-br) ;
+    border-radius: 0.62rem;
+    box-shadow: -.43rem -.43rem 1.06rem var(--clr-bg),
+    .43rem .43rem 1.06rem  rgba(70,70,70,0.15);
+    background: var(--clr-bg);
+}
+
+.terminar-compra:hover{
+    color: var(--clr-blue);
+    background: var(--clr-bg);
+    box-shadow: inset 27px 27px 54px var(--clr-grey-hover),
+                inset -27px -27px 54px var(--clr-bg);
+}
+
+.cart-card-header-name{
+    font-size:larger;
+    margin-left: .7rem;
+    color: var(--clr-grey);
+}
+
+.cart-card-img{
+    margin-left: .25rem;
+    max-width: 100%;
+    border-radius: 1rem;
+    
+}
+
+
+
+
+.cart-item-counter{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: var(--bg-white);
+border-radius: .25rem;
+}
+
+.cart-item-counter-controls{
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-item-counter-button{
+    font-size: 1rem;
+    color: var(--clr-grey);
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: .063rem;
+    padding: 0.5rem 1rem;
+    border: .10rem solid var(--clr-br) ;
+    border-radius: 0.62rem;
+    box-shadow: -.43rem -.43rem 1.06rem var(--clr-bg),
+    .43rem .43rem 1.06rem  rgba(70,70,70,0.15);
+    background: var(--clr-bg);
+
+
+}
+
+
+.cart-item-counter-button:hover{
+    color: var(--clr-blue);
+    background: var(--clr-bg);
+    box-shadow: inset 27px 27px 54px var(--clr-grey-hover),
+                inset -27px -27px 54px var(--clr-bg);
+
+}
+
+.cart-item-counter-number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--clr-blue);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    padding: .5rem;
+    
+    border-radius: .25rem;
+    
+}
+
+.cart-item-counter-button-text{
+    font-size: large;
+    color: var(--clr-grey);
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: .063rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.62rem;
+    border: .10rem solid var(--clr-br) ;
+    border-radius: 0.62rem;
+    box-shadow: -.43rem -.43rem 1.06rem var(--clr-bg),
+    .43rem .43rem 1.06rem  rgba(70,70,70,0.15);
+    background: var(--clr-bg);
+}
+
+.cart-item-counter-button-text:hover{ 
+    color: var(--clr-blue);
+    background: var(--clr-bg);
+    box-shadow: inset 27px 27px 54px var(--clr-grey-hover),
+                inset -27px -27px 54px var(--clr-bg);
+
+}
+
+
+.Toastify__toast-container {
+    margin-top: 7.55rem;
+    margin-right: -.55rem;
+    text-align: left;  
+    
+  }
+
+  @media screen and (max-width: 780px){
+
+    .cart-card-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+    }
+    
+    .cart-card-header{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+    }
+    
+    
+    
+    .cart-card-info{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        color: black;
+        text-transform: uppercase;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        
+        
+        
+    }
+    
+    
+
+  }

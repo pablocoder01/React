@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+:root {
+    --clr-bg: #fff;
+    --clr-br: #f7f7f7;
+    --clr-logo: #778ba5;
+    --clr-logo2: #1e90ff;
+}
+
+.banner-title{
+    color: var(--clr-logo);
+}
+
+.banner-title b{
+    color: var(--clr-logo2);
+}
+
+.banner-main-container{
+    background: var(--clr-logo2);
+    color: var(--clr-logo2);
+    display: flex;
+    justify-content: center;
+    padding: .62rem;
+    margin: .62rem;
+    border: .063rem solid var(--clr-br) ;
+    border-radius: 1rem;
+
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.banner-main-container::before{
+
+content: '';
+position: absolute;
+width: 150px;
+height: 1300px;
+left: 33rem;
+top: -600px;
+
+background: linear-gradient(#00e5ff, #b400fb);
+animation: animate 10s linear infinite;
+
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
+.banner-main-container::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: var(--clr-bg);
+    border-radius: .70rem;
+    }
+
+.banner-container{
+    z-index: 1;
+}
