@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../Footer/Footer';
 import { getCategories } from '../../asyncMock';
+import Checkout from '../Checkout/Checkout';
 
 
 
@@ -42,6 +43,7 @@ const Home = () => {
                         <Route path='/item/:itemId' element={<ItemDetailContainer />}/>
                         <Route path='*' element={<h1 className='error-404'>404 NOT FOUND</h1>}/>
                         <Route path='/cart' element={<CartContent />}/>
+                        <Route path='/checkout' element={<Checkout />} />
                     </Routes>
                 </CartProvider>
                 <Footer/>
