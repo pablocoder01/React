@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+:root {
+    --clr-bg: #fff;
+    --clr-br: #f7f7f7;
+    --clr-grey: #778ba5;
+    --clr-blue: #1e90ff;
+    --clr-grey-hover: #cdcdcd;
+}
+
+.checkoutForm_container{
+    display:flex;
+    justify-content: center;
+    padding: 2.5rem;
+    color: var(--clr-grey);    
+}
+
+.checkoutForm_form{
+    color: var(--clr-blue);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.checkoutForm_input{
+    display: flex;
+    margin: .6rem;
+}
+
+.checkoutForm_input{
+    padding: .2rem;
+    color: var(--clr-grey);
+}
+
+.checkoutForm_button{
+    font-size: 1.25rem;
+    color: var(--clr-grey);
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: .063rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.62rem;
+    border: .10rem solid var(--clr-br) ;
+    border-radius: 0.62rem;
+    box-shadow: -.43rem -.43rem 1.06rem var(--clr-bg),
+    .43rem .43rem 1.06rem  rgba(70,70,70,0.15);
+    background: var(--clr-bg);
+}
+
+.checkoutForm_button:hover{
+    color: var(--clr-blue);
+    background: var(--clr-bg);
+    box-shadow: inset 27px 27px 54px var(--clr-grey-hover),
+                inset -27px -27px 54px var(--clr-bg);
+                
+    }

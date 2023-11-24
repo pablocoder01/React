@@ -21,7 +21,7 @@ const CheckoutForm = ({ onConfirm }) => {
         <div className='checkoutForm_container'>
             <form onSubmit={handleConfirm} className='checkoutForm_form'>
                 <label className='checkoutForm_label'>
-                    Nombre
+                    Nombre 
                     <input
                         className='checkoutForm_input'
                         type='text'

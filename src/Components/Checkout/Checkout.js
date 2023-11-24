@@ -1,3 +1,4 @@
+import './Checkout.css'
 import { useState } from 'react';
 import { db } from '../../services/firebase/firebaseConfig';
 import CheckoutForm from '../CheckoutForm/CheckoutForm';
@@ -71,15 +72,19 @@ const Checkout = () => {
     };
 
     if (loading) {
-        return <h1>Se está generando su orden...</h1>;
+        return (<div className='checkout_container'>
+            <h1>Se está generando su orden...</h1>
+        </div>);
     }
 
     if (orderId) {
-        return <h1>El id de su orden es: {orderId}</h1>; 
+        return (<div className='checkout_container'>
+            <h1>El id de su orden es: {orderId}</h1>
+        </div>); 
     }
 
     return (
-        <div>
+        <div className='checkout_container'>
             <h1>Checkout</h1>
             <CheckoutForm onConfirm={createOrder} />
         </div>
